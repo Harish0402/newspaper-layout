@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    height: max-content;
+
+}
+
+.bg{
+    height: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2016/05/24/20/03/background-1413126_1280.jpg) ;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+
+}
+
+@font-face {
+    font-family: chomsky;
+    src: url(./font/Chomsky.woff2);
+}
+
+@font-face {
+    font-family: galeana;
+    src: url(./font/Demo_Fonts/Fontspring-DEMO-galeana-heavy.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=PT+Serif&display=swap');
+ body {
+  font-family: 'PT Serif', serif;
+  font-weight: 100;
+  color: #2b2222;
+  padding: 0 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+h1{
+    font-family: chomsky, Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+time {
+    font: 600 1.5rem 'Oswald', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+   
+    border-top: 3px solid #333333;
+    border-bottom: 3px solid #333333;
+    padding: 12px 0;
+   
+    display: block;
+  }
+
+  time sup {
+    font-size: .875rem;
+    font-weight: normal;
+  }
+
+h3{
+    font: 25px 'galeana', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+h4{
+    font: 15px 'galeana', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+@media(min-width: 955px) {
+    article {
+      column-count: 3;
+      column-rule: 2px solid #333333;
+      column-gap: 42px;
+      margin-top: 36px;
+    }
+
+    p {
+        text-align: justify;
+        hyphens: auto;
+      }
+
+    img{
+        float: left;
+        margin-right: 24px;
+    }
+  }
+
+  [class=top-left]{
+    margin-bottom: 250px;
+  }
+
+  [class=top-middle] {
+    margin-bottom: 350px;
+  }
+  blockquote {
+    font: 30px 'galeana', sans-serif;
+    margin: 1.5rem 2rem;
+    column-span: all;
+    text-align: justify;
+    color: blue;
+ 
+  }
+  blockquote::before { content: open-quote ; font-size:40px;}
+  blockquote::after { content: close-quote; font-size: 40px;}
+
+  footer{
+
+    margin-top: auto;
+    text-align: center;
+    padding: 15px;
+    background-color:lightsalmon;
+}
